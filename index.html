@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Abdullah</title>
+    <link rel="stylesheet" href="stylee.css"> <!-- Minified CSS file -->
+    <script src="https://kit.fontawesome.com/c6787bfd74.js" crossorigin="anonymous"></script>
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VD6HQCXC4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9VD6HQCXC4');
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Abdullah3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Abdullah</span> <br>Bajwa From Pakistan</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/imgg.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About me</h1>
+                    <p>To build up a challenging career in an organization where honesty, hard work, performance, and sincerity are the criteria for one's appraisal...</p>
+                    <div class="tab-tittle">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>Chatbots Development</span><br>Web/Android Chatbot Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>2019-Onward</li>
+                        <li><span>Chatbots Development</span><br>2021-Onward</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019</span><br>Matric From Allied School</li>
+                        <li><span>2021</span><br>Fsc From PGC</li>
+                        <li><span>2025</span><br>BS-AI for UMT</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-tittle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the process of creating visual aesthetics, user experience, and usability for websites...</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI (User Interface) and UX (User Experience) design are essential components of web design and development...</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Chatbots Design</h2>
+                    <p>Chatbot design involves creating a conversational interface that enables users to interact with the bot through text or voice input...</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-tittle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Connect around the world</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Connect around the world</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Chatbot App</h3>
+                        <p>Connect around the world</p>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="button-btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>bajwa15523@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile"></i>+92 3254749 164</p>
+                    <div class="social">
+                        <a href="https://web.facebook.com/Abdu11ah.bajwa"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/m.abdullah_bajwa/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/abdullah-bajwa-6a27ab1a1/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/MAbdullahBajwa"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/channel/UCewWURLytB47Yeuo8rytnew"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="button-btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name." required>
+                        <input type="email" name="email" placeholder="Your email address." required>
+                        <textarea rows="8" name="message" placeholder="Your message" required></textarea>
+                        <button type="submit" class="button-btn">Send</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> thearticals.com<br> Made by <i class="fa-solid fa-heart"></i> Abdullah.</p>
+    </div>
+
+    <script src="script.min.js"></script> <!-- Minified JavaScript file -->
+</body>
+</html>
