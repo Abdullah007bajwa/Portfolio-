@@ -59,64 +59,72 @@ nav ul li a:hover::after{
     width: 100%;
     
 }
-.text-box{
-    margin-top: 20%;
+.text-box {
+    width: 50%;              
+    float: left;            
+    margin-top: 20%;         
     font-size: 30px;
-    
 }
-.text-box h1{
+
+.text-box h1 {
     font-size: 45px;
     margin-top: 20px;
 }
-.text-box h1 span{
+
+.text-box h1 span {
     color: coral;
 }
-.text-box p{
+
+.text-box p {
     margin: 10px 0 40px;
     font-size: 20px;
     color: snow;
-    
-
-    
 }
+
 /*-----------------------*/
-#about{
+#about {
     padding: 80px 0px;
     color: beige;
-    
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-col-1{
+
+.about-col-1 {
     flex-basis: 35%;
 }
-.about-col-1 img{
+
+.about-col-1 img {
     width: 100%;
 }
-.about-col-2{
+
+.about-col-2 {
     flex-basis: 60%;
 }
-.sub-tittle{
+
+.sub-tittle {
     font-size: 60px;
     font-weight: 600;
     color: aliceblue;
-    
 }
-.tab-tittle{
+
+.tab-tittle {
     display: flex;
     margin: 20px 0 40px;
 }
-.tab-links{
+
+.tab-links {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
 }
-.tab-links::after{
+
+.tab-links::after {
     content: '';
     width: 0%;
     height: 3px;
@@ -126,25 +134,34 @@ nav ul li a:hover::after{
     bottom: -8px;
     transition: 0.5s;
 }
-.tab-links.active-link::after{
+
+.tab-links.active-link::after {
     width: 50%;
 }
 
-.tab-contents ul li{
+.tab-contents ul li {
     list-style: none;
     margin: 10px 0px;
-    
 }
-.tab-contents ul li span{
+
+.tab-contents ul li span {
     font-size: 14px;
     color: bisque;
 }
+
 .tab-contents {
     display: none;
+    margin-top: 20px;
 }
-.tab-contents.active-tab{
+
+.tab-contents.active-tab {
+    display: flex;
+}
+
+#about .row:nth-child(2) .about-col-1 {
     display: block;
 }
+
 /*--------------------------------*/
 #services{
     padding: 30px 0;
@@ -187,32 +204,35 @@ nav ul li a:hover::after{
 }
 
 /*-----------------*/
-#portfolio{
+#portfolio {
     padding: 50px 0;
-    
 }
-.work-list{
+
+.work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.work{
+
+.work, .more-projects .work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
-.work img{
+
+.work img, .more-projects .work img {
     width: 100%;
     border-radius: 10px;
     display: block;
-    transition: transform(0.5s);
+    transition: transform 0.5s;
 }
-.layer
-{
+
+.layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -227,36 +247,47 @@ nav ul li a:hover::after{
     font-size: 14px;
     transition: height 0.3s;
 }
-.layer h3{
+
+.layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
 }
-.work:hover img{
+
+.work:hover img, .more-projects .work:hover img {
     transform: scale(1.1);
 }
-.work:hover .layer{
+
+.work:hover .layer, .more-projects .work:hover .layer {
     height: 100%;
 }
-.button-btn{
+
+.more-projects {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.button-btn {
     display: block;
     text-decoration: none;
     color: ghostwhite;
-    margin: 50px auto;
+    margin: 5% auto;
     width: fit-content;
-
     padding: 14px 50px;
     font-size: 18px;
-    background: tranparent;
+    background: transparent;
     border: 1px solid #ff004f;
     border-radius: 6px;
     cursor: pointer;
-    
 }
-.button-btn:hover{
-    
+
+.button-btn:hover {
     background: #ff004f;
     transition: 0.7s;
 }
+
+
 /*-----------------*/
 .contact-left{
     flex-basis: 35%
@@ -306,6 +337,7 @@ form input, form textarea{
 .copyright{
     width: 100%;
     text-align: center;
+    margin-top: 3%;
     padding: 25px 0;
     background: #262626;
 }
@@ -321,15 +353,18 @@ nav .fa-solid{
          background-image: url(images/back1.jpg);
         
 }
-    .text-box{
-    margin-top: 100%;
-    font-size: 16px;
-    
-}
-    .text-box h1{
-    font-size: 30px;
-   
-}
+    .text-box {
+        width: 100%;        
+        margin-top: 100%;  
+        font-size: 16px;    
+        float: none;        
+        text-align: center; 
+    }
+
+    .text-box h1 {
+        font-size: 30px;   
+    }
+
     nav .fa-solid{
     display: block;
         font-size: 22px;
