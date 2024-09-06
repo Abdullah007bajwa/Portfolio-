@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Abdullah Bajwa - Software Developer</title>
-    <link rel="stylesheet" href="style.css"> <!-- Minified CSS file -->
+    <link rel="stylesheet" href="stylee.css"> <!-- Minified CSS file -->
     <script src="https://kit.fontawesome.com/c6787bfd74.js" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VD6HQCXC4"></script>
     <script>
@@ -33,19 +33,20 @@
             </nav>
             <div class="text-box">
                 <p>Full Stack Developer & AI Specialist</p>
-                <h1>Welcome to <span>Abdullah Bajwa's</span> Digital Portfolio</h1>
+                <h1>Welcome to <br><span>Abdullah Bajwa's</span> Portfolio</h1>
                 <p>Building Solutions with Code, AI, and Creativity</p>
-                <a href="#portfolio" class="button-btn">Explore My Work</a>
+                
             </div>
         </div>
+        
     </div>
-
+    <a href="#portfolio" class="button-btn">Explore My Work</a>
     <!-- About Section -->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/profile.jpg" alt="Abdullah Bajwa">
+                    <img src="images/imgg.jpg" alt="Abdullah Bajwa">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-tittle">About Me</h1>
@@ -55,30 +56,32 @@
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
+                
+                    
+                    <!-- Skills Tab -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Expert in AI and backend development</li>
+                            <li><span>Flutter</span><br>Mobile App Development</li>
+                            <li><span>Django & Flask</span><br>Web Application Development</li>
+                            <li><span>Cloud Services</span><br>GCP & AWS Deployment</li>
+                        </ul>
+                    </div>
+                    <!-- Experience Tab -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>CEO & Founder, Bajwa.co</span><br>2020 - Present</li>
+                            <li><span>Sales Executive, Omega Techtriad LLC</span><br>Jul 2023 - Present</li>
+                        </ul>
+                    </div>
+                    <!-- Education Tab -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Science in AI</span><br>UMT, Lahore, 2021 - Present</li>
+                            <li><span>Fsc (Pre-Medical)</span><br>Aspire Group of Colleges, Gujranwala, 2019 - 2021</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <!-- Skills Tab -->
-            <div class="tab-contents active-tab" id="skills">
-                <ul>
-                    <li><span>Python</span><br>Expert in AI and backend development</li>
-                    <li><span>Flutter</span><br>Mobile App Development</li>
-                    <li><span>Django & Flask</span><br>Web Application Development</li>
-                    <li><span>Cloud Services</span><br>GCP & AWS Deployment</li>
-                </ul>
-            </div>
-            <!-- Experience Tab -->
-            <div class="tab-contents" id="experience">
-                <ul>
-                    <li><span>CEO & Founder, Bajwa.co</span><br>2020 - Present</li>
-                    <li><span>Sales Executive, Omega Techtriad LLC</span><br>Jul 2023 - Present</li>
-                </ul>
-            </div>
-            <!-- Education Tab -->
-            <div class="tab-contents" id="education">
-                <ul>
-                    <li><span>Bachelor of Science in AI</span><br>UMT, Lahore, 2021 - Present</li>
-                    <li><span>Fsc (Pre-Medical)</span><br>Aspire Group of Colleges, Gujranwala, 2019 - 2021</li>
-                </ul>
             </div>
         </div>
     </div>
@@ -88,13 +91,14 @@
         <div class="container">
             <h1 class="sub-tittle">My Services</h1>
             <div class="services-list">
-                <div>
+            
+                <div class="services" onclick="window.location.href='https://www.linkedin.com/pulse/art-full-stack-development-journey-building-complete-abdullah-bajwa-6g40f/'">
                     <i class="fa-solid fa-code"></i>
                     <h2>Full Stack Development</h2>
                     <p>I specialize in developing full-stack applications that deliver seamless user experiences across the web and mobile platforms.</p>
                     <a href="#portfolio">Learn more</a>
                 </div>
-                <div>
+                <div class="services" onclick="window.location.href='https://www.linkedin.com/pulse/ai-ml-solutions-empowering-future-intelligent-abdullah-abdullah-bajwa-yepvf/'">
                     <i class="fa-solid fa-robot"></i>
                     <h2>AI & ML Solutions</h2>
                     <p>Whether it's predictive analytics or deep learning models, I build AI-driven solutions that drive innovation.</p>
@@ -115,21 +119,21 @@
         <div class="container">
             <h1 class="sub-tittle">My Work</h1>
             <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png">
+                <div class="work" onclick="window.location.href='https://github.com/Abdullah007bajwa/WorkoutVideoAnalyzer'">
+                    <img src="images/work-1.jpg">
                     <div class="layer">
                         <h3>Workout Video Classifier</h3>
                         <p>AI-driven exercise video classification using deep learning.</p>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/work-2.png">
+                <div class="work" onclick="window.location.href='https://github.com/Abdullah007bajwa/Advanced-Stock-Pattern-Prediction-using-LSTM-with-Attention-Mechanism-in-TensorFlow'">
+                    <img src="images/work-2.jpg">
                     <div class="layer">
                         <h3>Stock Pattern Predictor</h3>
                         <p>Predictive model using LSTM for stock market trends.</p>
                     </div>
                 </div>
-                <div class="work">
+                <div class="work" onclick="window.location.href='https://github.com/Abdullah007bajwa/Elderly_Care_Companion'">
                     <img src="images/work-3.jpg">
                     <div class="layer">
                         <h3>Elderly Companion App</h3>
@@ -137,9 +141,44 @@
                     </div>
                 </div>
             </div>
-            <a href="#portfolio" class="button-btn">See More Projects</a>
+
+            <!-- Additional Projects for 'See More Projects' -->
+            <div class="more-projects">
+                <div class="work" onclick="window.location.href='https://github.com/Abdullah007bajwa/Million-Parameter-LLM'">
+                    <img src="images/work-4.jpg">
+                    <div class="layer">
+                        <h3>Million Parameter LLM</h3>
+                        <p>Large language model with millions of parameters for text generation tasks.</p>
+                    </div>
+                </div>
+                <div class="work" onclick="window.location.href='https://github.com/Abdullah007bajwa/Stella-TheChatbot'">
+                    <img src="images/work-5.png">
+                    <div class="layer">
+                        <h3>Stella - The Chatbot</h3>
+                        <p>AI chatbot built for natural language conversations using state-of-the-art models.</p>
+                    </div>
+                </div>
+                <div class="work" onclick="window.location.href='https://github.com/Abdullah007bajwa/bert'">
+                    <img src="images/work-6.png">
+                    <div class="layer">
+                        <h3>BERT</h3>
+                        <p>Bidirectional Encoder Representations from Transformers for NLP tasks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 'See More Projects' button to show additional work -->
+            <a href="javascript:void(0)" onclick="showMoreProjects()" class="button-btn">See More Projects</a>
         </div>
     </div>
+
+    <script>
+
+    </script>
+
+    
+
+    
 
     <!-- Contact Section -->
     <div id="contact">
@@ -168,6 +207,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> thearticals.com<br> Made by <i class="fa-solid fa-heart"></i> Abdullah.</p>
     </div>
     <script src="script.min.js"></script> <!-- Minified JavaScript file -->
 </body>
