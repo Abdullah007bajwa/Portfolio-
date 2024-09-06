@@ -30,7 +30,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 🙏 Acknowledgments
 
 Special thanks to GitHub for providing a platform for hosting this portfolio. Inspired by various portfolio designs found online. Feel free to explore the code and use it as a reference for your own portfolio projects!
-
+click below 
+https://abdullah007bajwa.github.io/Portfolio-/
 ---
 
 ## Contributing
