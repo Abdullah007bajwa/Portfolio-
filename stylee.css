@@ -413,6 +413,9 @@ nav .fa-solid{
     .Copyright{
         font-size: 9px;
 }
+.button-btn {
+    margin: 30px auto;
+}
 
 }
 #msg{
